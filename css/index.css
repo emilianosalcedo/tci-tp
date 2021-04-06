@@ -8,11 +8,6 @@ button {
     font-family: 'Work Sans', sans-serif;
 }
 
-div {
-    /* background: lightgray; */
-    /* margin: 12px; */
-}
-
 #first-nav {
     background: lightgray;
     text-align: right;
@@ -30,7 +25,6 @@ div {
 #banner {
     text-align: center;
     padding: 80px;
-    /* background: lightskyblue; */
     background-image: url(http://placeimg.com/1000/300/tech);
     color: white;
 }
@@ -55,13 +49,10 @@ div {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 48px;
-    /* flex-direction: column; */
 }
 
 #items .item-product {
     width: 24%;
-    /* display: inline-block; */
-    /* margin 6px; */
     text-align: center;
     border: 1px solid #999;
     margin: 12px auto;
@@ -69,7 +60,6 @@ div {
 
 #items div img {
     width: 100%;
-    /* padding: 48px; */
 }
 
 #items div p {
