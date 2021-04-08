@@ -1,0 +1,24 @@
+#second-nav .logo {
+  height: 36px;
+}
+#second-nav .second-nav-menu {
+  position: relative;
+}
+#second-nav .second-nav-links {
+  display: none;
+  position: absolute;
+  top: 36px;
+  right: 0px;
+  background: white;
+}
+#second-nav .second-nav-hamburger {
+  border: 1px solid gray;
+  text-align: center;
+}
+#second-nav .second-nav-hamburgerhover + .second-nav-links {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+/*# sourceMappingURL=app.css.map */
