@@ -26,7 +26,7 @@ var calculadora = {
     },
 
     resetear() {
-        
+        this.resultado = 0;
     }
 }
 
@@ -36,12 +36,6 @@ calculadora.sumar(45)
 calculadora.sumar(92)
 
 console.log( calculadora.obtenerResultado() )
-
-
-
-
-
-
 
 
 function nombreCompleto(primerNombre, segundoNombre, apellido) {
