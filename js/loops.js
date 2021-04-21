@@ -64,6 +64,34 @@ var links = [
 ];
 */
 
+/*
+ var contacts = [
+    {
+        "photo_url" : "...",
+        "name" : "Cosme Fulanito",
+        "last_connection" : "2021-04-19 18:59:34",
+        "last_message" : {
+            "text" : "ahgjdahgsdj",
+            "date" : "2021-04-19 18:59:34",
+            "read" : true
+        }
+    },
+    {
+        "photo_url" : "...",
+        "name" : "Cosme Fulanito",
+        "last_connection" : "2021-04-19 18:59:34",
+        "last_message" : null
+    },
+    {
+        "photo_url" : "...",
+        "name" : "Cosme Fulanito",
+        "last_connection" : "2021-04-19 18:59:34",
+        "last_message" : null
+    },
+]
+*/
+
+
 var links = [
     {
         href: '#home',
@@ -82,6 +110,40 @@ var links = [
         name: 'Contacto'
     }
 ];
+
+/*
+ var links = [
+    {
+        href : '#home',
+        name : 'Home',
+        children : []
+    },
+    {
+        href : '#productos',
+        name : 'Productos',
+        children : [
+            {
+                href : "sublink uno",
+                name : "sublink uno"
+            },
+            {
+                href : "sublink dos",
+                name : "sublink dos"
+            },
+        ]
+    },
+    {
+        href : '#nosotros',
+        name : 'Nosotros',
+        children : []
+    },
+    {
+        href : '#contacto',
+        name : 'Contacto',
+        children : []
+    },
+]
+*/
 
 for (var i = 0; i < links.length; i++) {
     linksContainer.innerHTML += generateLink(links[i]);
@@ -164,3 +226,25 @@ for (var i = 0; i < productos.length; i++) {
 function generateLink(link) {
     return '<a href="#' + link.href + '">' + link.name + '</a>';
 }
+
+var paginacion = document.querySelector('.paginacion')
+
+var cantidadDeResultados = 4
+
+function mostrarItems(q) {
+    for (var i = 0; i < q; i++) {
+        itemsContainer.innerHTML += `
+            <div class="item-product">
+                <img src="${products[i].photo}" alt="Logo Google" />
+                <p>${products[i].description}</p>
+            </div>
+        `
+    }
+}
+
+paginacion.addEventListener('click', function () {
+    cantidadDeResultados = 8
+    mostrarItems(cantidadDeResultados)
+})
+
+mostrarItems(cantidadDeResultados)
