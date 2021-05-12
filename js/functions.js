@@ -4,7 +4,6 @@ var obj = {}
 var bool = false // 0 = false, 1 = true
 var str = ''
 
-
 // nombre
 // argumentos
 // bloque de codigo
@@ -26,7 +25,7 @@ var calculadora = {
     },
 
     resetear() {
-        this.resultado = 0;
+
     }
 }
 
@@ -36,6 +35,12 @@ calculadora.sumar(45)
 calculadora.sumar(92)
 
 console.log( calculadora.obtenerResultado() )
+
+
+
+
+
+
 
 
 function nombreCompleto(primerNombre, segundoNombre, apellido) {
@@ -55,7 +60,28 @@ var resultadoSuma = calculadora.sumar(6, 8)
 var profesor = nombreCompleto('Alejandro', 'Ezequiel', 'Villafañe')
 var usuario = nombreCompleto('Cosme', '', 'Fulanito')
 
-console.log(resultadoSuma)
 
-console.log(profesor)
-console.log(usuario)
+// 1 base de datos / muchos datos (solo datos) / JSON
+// 1 app / funciones
+
+var users = []
+
+// http://domain.com
+// file:///Users/developer/cursos/it-master/it-master-desarrollo-web/index.html
+fetch('https://jsonplaceholder.typicode.com/users')
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (json) {
+        console.log(json)
+    })
+
+var user = {
+    getFullName() {
+        return this.firstName + ' ' + this.lastName
+    }
+}
+
+for (var i = 0; i < users.length; i++) {
+    users[i] = {...users[i], ...user}
+}

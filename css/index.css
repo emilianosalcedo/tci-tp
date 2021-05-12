@@ -6,20 +6,18 @@
 a {
     text-decoration: none;
     border: 1px solid white;
-    padding: 3px 9px;
+    padding: 3px;
 }
 
 a:hover {
-    /*text-decoration: underline;*/
+    /* text-decoration: underline; */
     border: 1px solid gray;
     color: red;
 }
 
-/*
-a:visited {
+/* a:visited {
     color: #999;
-}
-*/
+} */
 
 body,
 button {
@@ -32,11 +30,11 @@ button {
     padding: 12px;
 }
 
-#second-nav{
+#second-nav {
     display: flex;
-    padding: 12px;
     justify-content: space-between;
     align-items: center;
+    padding: 12px;
     background: white;
 }
 
@@ -47,30 +45,30 @@ button {
 #banner {
     text-align: center;
     padding: 80px;
-    background-image: url(http://placeimg.com/1000/300/tech);
+    background-image: url(https://placeimg.com/1000/300/tech);
     color: white;
 }
 
-#banner h1, 
+#banner h1,
 #banner button {
     margin: 12px;
+}
+
+#banner button {
+    border: 1px solid lightblue;
+    border-radius: 3px;
+    padding: 12px 24px;
 }
 
 #banner h1 {
     font-size: 60px;
 }
 
-#banner button {
-    padding: 12px 24px;
-    border: 1px solid lightblue;
-    border-radius: 3px;
-}
-
 #banner .overlay {
     background: rgba(100,100,100,.4);
 }
 
-#items {
+#items { 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -94,25 +92,25 @@ button {
 }
 
 .paginacion {
-    background: goldenrod;
-    padding: 12px 48px;
     border: none;
+    padding: 12px 48px;
+    background: goldenrod;
 }
 
 .paginacion:hover {
     font-weight: bold;
-    box-shadow: gray 3px 3px 3px;
+    box-shadow: gray 3px 3px 6px;
 }
 
 .negrita {
     font-weight: bold;
 }
 
-.tachado{
+.tachado {
     text-decoration: line-through;
 }
 
-.precio-final {
+.precio-final { 
     font-size: 24px;
     font-weight: bold;
 }
@@ -131,7 +129,6 @@ button {
     height: 200px;
     background: lightgray;
     padding: 24px;
-    line-height: 2em;
 }
 
 #footer form input {
@@ -143,20 +140,21 @@ button {
 }
 
 #footer form button {
-    padding: 6px;
     font-size: 18px;
-    background: dodgerblue;
+    border-radius: 3px;
+    padding: 6px;
     color: white;
+    background: dodgerblue;
     border: 1px solid dodgerblue;
 }
 
 .cookie {
-    background-color: rgba(0,0,0,.75);
     padding: 24px;
     text-align: center;
     color: white;
+    background: rgba(0,0,0, 0.75);
     position: sticky;
-    bottom: 0;
+    bottom: 0px;
 }
 
 .cookie a {
@@ -173,7 +171,7 @@ button {
         font-size: 36px;
     }
 
-    #items {
+    #items { 
         padding: 24px;
     }
 
@@ -214,7 +212,7 @@ button {
         display: none;
     }
 
-    #items {
+    #items { 
         padding: 12px;
     }
 

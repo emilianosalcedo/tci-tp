@@ -1,63 +1,67 @@
 // DATOS
-// VARIABLES Y/O CONSTANTES
-// TIPO DE DATO Y DATO
+// Variables y/o Constantes
+// Tipo de dato y dato
 
-// TIPO DE DATO = undefined
-var nombre;
+// Tipo de dato = Undefined
+var nombre 
 
-// TIPO DE DATO string (CADENA DE CARACTERES)
-var primerNombre = "Emiliano";
-var apellido = "Salcedo";
+// Tipo de dato es string (cadena de caracteres)
+var primerNombre = 'Alejandro'
+var segundoNombre = 'Ezequiel'
+var apellido = 'Villafañe'
 
-// CONCATENAR
-var nombreCompleto = primerNombre + " " + apellido;
-var cantidadDeLetras = nombreCompleto.length;
+// Concatenar
+var nombreCompleto = primerNombre + ' ' + segundoNombre + ' ' + apellido
+var cantidadDeLetras = nombreCompleto.length 
 
-// TIPO DE DATO number
-var edad = 30;
+console.log(nombreCompleto)
+console.log(cantidadDeLetras)
 
-var altura = 1.78;
+// Tipo de dato es number
+var edad = 12
+var altura = 1.78
 
-console.log(edad);
+// Tipo de dato boolean (false, true)
+var esExtranjero = true
+var esMayorDeEdad = edad > 17
 
-// TIPO DE DATO boolean (false, true)
-var esExtranjero = false;
-
-var esMayorDeEdad = edad > 17;
-
-console.log(nombreCompleto);
-
-// LOGICA / CONDICIONALES
-
-if (esExtranjero === true) {
-    console.log("Bienvenido a nuestro pais");
-}
-else {
-    console.log("Te redirigiremos a otra pagina...");
+if (esMayorDeEdad) {
+    console.log('Puedes acceder al sitio')
+} else {
+    console.log('Te redirigiremos a otra pagina...')
 }
 
-// EVENTOS
-var cartelCookie = document.querySelector(".cookie");
-var aceptar = document.querySelector(".cookie a");
-var mostrarMensaje = true;
+// Logica / Condicionales
+if ( esExtranjero == true ) {
+    console.log('Bienvenido a nuestro pais')
+} else {
+    console.log('Hola compatriota')
+}
+
+
+// Eventos
+var cartelCookie = document.querySelector('.cookie')
+var aceptar = document.querySelector('.cookie a')
+var mostrarMensaje = false
 
 if (mostrarMensaje) {
-    cartelCookie.style.display = "none";
+    cartelCookie.style.display = 'none'
 }
 
-aceptar.addEventListener("click", function () {
-    //console.log("clickeaste sobre aceptar");
-    cartelCookie.style.display = "none";
-});
+aceptar.addEventListener('click', function () {
+    cartelCookie.style.display = 'none'
+})
 
-// ENVIO DE EMAIL
-var botonDeEnviar = document.querySelector("#footer form button");
+// Envio de email
+var botonDeEnviar = document.querySelector('#footer form button')
 
-botonDeEnviar.addEventListener("click", function () {
-    botonDeEnviar.parentElement.remove();
-    let parrafo = document.createElement("p");
-    parrafo.innerHTML = "Hemos recibido la suscripcion";
-    document.querySelector("#footer").appendChild(parrafo);
-});
+botonDeEnviar.addEventListener('click', function () {
+    botonDeEnviar.parentElement.remove()
 
-console.log(botonDeEnviar);
+    let parrafo = document.createElement('p')
+    parrafo.innerHTML = 'Hemos recibido la suscripcion'
+
+    document.querySelector('#footer').appendChild(parrafo)
+})
+
+console.log(botonDeEnviar)
