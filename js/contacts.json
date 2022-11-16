@@ -1,12 +1,18 @@
 [
     {
-        "firstName" : "Alejandro",
-        "lastName" : "Villafane",
-        "age" : "34"
+        "firstName" : "Tomas",
+        "lastName" : "Prott",
     },
     {
-        "firstName" : "Cosme",
-        "lastName" : "Fulanito",
-        "age" : "40"
+        "firstName" : "Juan Manuel",
+        "lastName" : "Sommerstein",
+    },
+    {
+        "firstName" : "Guido",
+        "lastName" : "Kochen",
+    },
+    {
+        "firstName" : "Emiliano",
+        "lastName" : "Salcedo",
     }
 ]

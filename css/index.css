@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 a {
@@ -22,10 +23,11 @@ a:hover {
 body,
 button {
     font-family: 'Work Sans', sans-serif;
+    background: #232629;
 }
 
 #first-nav {
-    background: lightgray;
+    background: #31363b;
     text-align: right;
     padding: 12px;
 }
@@ -35,7 +37,7 @@ button {
     justify-content: space-between;
     align-items: center;
     padding: 12px;
-    background: white;
+    background: #31363b;
 }
 
 #second-nav .logo {
@@ -45,7 +47,8 @@ button {
 #banner {
     text-align: center;
     padding: 80px;
-    background-image: url(https://placeimg.com/1000/300/tech);
+    background-image: url(/home/fenrir/template-tci/img/current-si.png);
+    background-position: center;
     color: white;
 }
 
@@ -127,7 +130,7 @@ button {
 
 #footer {
     height: 200px;
-    background: lightgray;
+    background: #4d4d4d;
     padding: 24px;
 }
 
@@ -194,7 +197,7 @@ button {
         position: absolute;
         top: 36px;
         right: 0px;
-        background: white;
+        background: #232629;
     }
 
     #second-nav .second-nav-hamburger {

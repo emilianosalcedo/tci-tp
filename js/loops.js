@@ -1,53 +1,6 @@
-// array, arreglo, matriz, lista, vector
-
-// 0 : A
-// 1 : l
-// 2 : e
-
-var nombre = [
-    'Alejandro',  // 0
-    'Ezequiel',   // 1
-    'Villafane',  // 2
-]
-
-var mixto = [
-    'soy un string',
-    123,
-    true,
-    null,
-    []
-]
-
-mixto.push('nuevo dato')
-
-for (var i = 0; i < mixto.length; i++) {
-    console.log( mixto[i] )
-}
-
-// 1 era - i = 0 - SI - ejecuta
-// 2 da -  i = 1 - SI - ejecuta
-// ...
-// 10ma - i = 9 - NO
-
-// array asociativo
-var usuario = {
-    primerNombre : 'Alejandro',
-    segundoNombre : 'Ezequiel',
-    apellido : 'Villafane',
-    altura : 1.78,
-    esExtranjero : false,
-}
-
 var link = '<a href="#home">...</a>'
 
 var linksContainer = document.querySelector('.second-nav-links')
-
-// var links = [
-//     'Home',
-//     'Nosotros',
-//     'Productos',
-//     'Contacto',
-// ]
 
 var contacts = [
     {
@@ -59,19 +12,7 @@ var contacts = [
             "date" : "2021-04-19 18:59:34",
             "read" : true
         }
-    },
-    {
-        "photo_url" : "...",
-        "name" : "Cosme Fulanito",
-        "last_connection" : "2021-04-19 18:59:34",
-        "last_message" : null
-    },
-    {
-        "photo_url" : "...",
-        "name" : "Cosme Fulanito",
-        "last_connection" : "2021-04-19 18:59:34",
-        "last_message" : null
-    },
+    }
 ]
 
 var links = [
@@ -93,17 +34,7 @@ var links = [
                 name : "sublink dos"
             },
         ]
-    },
-    {
-        href : '#nosotros',
-        name : 'Nosotros',
-        children : []
-    },
-    {
-        href : '#contacto',
-        name : 'Contacto',
-        children : []
-    },
+    }
 ]
 
 for (var i = 0; i < links.length; i++) {
@@ -118,53 +49,21 @@ var itemsContainer = document.querySelector('#items')
 
 var products = [
     {
-        photo : "https://placeimg.com/400/400/arch",
+        photo : "img/tr1.png",
         description : "Uno category one product category one product category one product category one product category one"
     },
     {
-        photo : "https://placeimg.com/400/400/arch",
+        photo : "img/tr2.png",
         description : "Dos category one product category one product category one product category one product category one"
     },
     {
-        photo : "https://placeimg.com/400/400/arch",
+        photo : "img/tr3.png",
         description : "Tres category one product category one product category one product category one product category one"
     },
     {
-        photo : "https://placeimg.com/400/400/arch",
+        photo : "img/tr4.png",
         description : "Cuatro category one product category one product category one product category one product category one"
-    },
-    {
-        photo : "https://placeimg.com/400/400/arch",
-        description : "Product category one product category one product category one product category one product category one"
-    },
-    {
-        photo : "https://placeimg.com/400/400/arch",
-        description : "Product category one product category one product category one product category one product category one"
-    },
-    {
-        photo : "https://placeimg.com/400/400/arch",
-        description : "Product category one product category one product category one product category one product category one"
-    },
-    {
-        photo : "https://placeimg.com/400/400/arch",
-        description : "Product category one product category one product category one product category one product category one"
-    },
-    {
-        photo : "https://placeimg.com/400/400/arch",
-        description : "Product category one product category one product category one product category one product category one"
-    },
-    {
-        photo : "https://placeimg.com/400/400/arch",
-        description : "Product category one product category one product category one product category one product category one"
-    },
-    {
-        photo : "https://placeimg.com/400/400/arch",
-        description : "Product category one product category one product category one product category one product category one"
-    },
-    {
-        photo : "https://placeimg.com/400/400/arch",
-        description : "Product category one product category one product category one product category one product category one"
-    },
+    }
 ]
 
 var paginacion = document.querySelector('.paginacion')
