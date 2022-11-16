@@ -1,3 +1,3 @@
 # Current-SI
 
-![logo](resources/current-si.png)
+![logo](img/current-si.png)
