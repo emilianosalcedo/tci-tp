@@ -1,12 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    color: white;
+    color: #fcfcfc;
 }
 
 a {
     text-decoration: none;
-    border: 1px solid white;
+    border: 1px solid #fcfcfc;
     padding: 3px;
 }
 
@@ -225,11 +225,20 @@ button {
 }
 
 #optionlist.form-control {
-  color: #fcfcfc;
+  color: #2ecc71;
   background-color: #232629;
 }
 
+option.opcion {
+  color: #2ecc71;
+}
+
+#boton-visualizar {
+  color: #fcfcfc;
+}
+
 #boton-visualizar:hover {
+  color: #fcfcfc;
   font-weight: bold;
-  box-shadow: gray 3px 3px 6px;
+  box-shadow: #1cdc9a 3px 3px 6px;
 }
