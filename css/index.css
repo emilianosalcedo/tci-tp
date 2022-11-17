@@ -48,8 +48,10 @@ button {
     text-align: center;
     padding: 80px;
     color: #fcfcfc;
+}
+
+#current {
     overflow: hidden;
-    background-image: url(https://raw.githubusercontent.com/emilianosalcedo/tci-tp/master/img/current-si.png);
     background-position: center;
     background-repeat: no-repeat;
 }
