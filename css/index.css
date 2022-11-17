@@ -47,9 +47,11 @@ button {
 #banner {
     text-align: center;
     padding: 80px;
-    background-image: url(/home/fenrir/template-tci/img/current-si.png);
+    color: #fcfcfc;
+    overflow: hidden;
+    background-image: url(https://raw.githubusercontent.com/emilianosalcedo/tci-tp/master/img/current-si.png);
     background-position: center;
-    color: white;
+    background-repeat: no-repeat;
 }
 
 #banner h1,
