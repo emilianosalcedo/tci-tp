@@ -10,28 +10,32 @@ if (mostrarMensaje) {
 
 botonVisualizar.addEventListener('click', function () {
   var opcion = document.getElementById('optionlist').value;
+  var cors = 'https://cors-solucion.herokuapp.com/';
   var url = 'https://api-dolar-argentina.herokuapp.com/api/';
+  var opts = {
+      method: 'GET',
+      mode: 'cors',
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-type': 'application/json',
+        'Accept': '*'
+      }
+    };
 
   if (opcion == "ORT") {
     mainDisplay.innerHTML = 'Mas de lo que estoy dispuesto a pagar, sobrio';
   }
   else {
-    fetch(url + opcion, {
-      method: 'GET',
-      mode: 'no-cors',
-      headers: {
-        'Access-Control-Allow-Origin': '*'
-      }
-    }).then((res) => { res.json() }).then(data => {
+    fetch(cors + url + opcion, opts).then((res) => { return res.json() }).then((data) => {
       console.log(data);
       var compra = data.compra;
       var venta = data.venta;
       mainDisplay.innerHTML = 'Compra: ' + compra + ' AR$<br>Venta: ' + venta + ' AR$';
-    });
+    }).catch(err => console.log('Request Failed', err));
   }
 })
 
-var usuario = nombreCompleto('Cosme', '', 'Fulanito');
+//var usuario = nombreCompleto('Cosme', '', 'Fulanito');
 var users = [];
 
 fetch('https://jsonplaceholder.typicode.com/users')
@@ -51,8 +55,8 @@ var user = {
 for (var i = 0; i < users.length; i++) {
     users[i] = {...users[i], ...user};
 }
+
 var link = '<a href="#home">...</a>';
-var linksContainer = document.querySelector('.second-nav-links');
 
 var contacts = [
     {
@@ -88,10 +92,6 @@ var links = [
         ]
     }
 ];
-
-for (var i = 0; i < links.length; i++) {
-    linksContainer.innerHTML += generateLink(links[i]);
-}
 
 function generateLink(link) {
     return '<a href="' + link.href + '">' + link.name + '</a>';
