@@ -4,35 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Current-$i</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;700&display=swap" rel="stylesheet">
     
     <link href="css/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div id="first-nav">
-        <a href="#footer">Sign in</a> or
-        <a href="#footer">create an account</a>
-    </div>
+    
 
     <div id="second-nav">
         <img class="logo" src="img/logo.png" alt="Logo Google" />
-
-        <div class="second-nav-menu">
-            <div class="second-nav-hamburger">
-                <img src="img/hamburguesa.svg" alt="">
-            </div>
-
-            <div class="second-nav-links">
-            </div>
-        </div>
     </div>
 
     <div id="banner">
         <div class="overlay">
             <h1 id="texto-principal">Seleccione la moneda que desea visualizar:</h1>
-            <button id="boton-dolares">Dolares</button>
+            <select class="form-control" id="optionlist" >
+                <option value="dolaroficial">Dolar oficial</option>
+                <option value="dolarblue">Dolar blue</option>
+                <option value="contadoliqui">Dolar contado con liquidacion</option>
+                <option value="dolarpromedio">Dolar promedio</option>
+                <option value="dolarbolsa">Dolar bolsa</option>
+                <option value="bbva">Dolar Banco BBVA</option>
+                <option value="piano">Dolar Banco Piano</option>
+                <option value="hipotecario">Dolar hipotecario</option>
+                <option value="galicia">Dolar Banco Galicia</option>
+                <option value="santander">Dolar Banco Santander</option>
+                <option value="ciudad">Dolar ciudad</option>
+                <option value="supervielle">Dolar Banco Supervielle</option>
+                <option value="patagonia">Dolar Banco Patagonia</option>
+                <option value="comafi">Dolar Banco Comafi</option>
+                <option value="nacion">Dolar Banco Nacion</option>
+                <option value="bind">Dolar Banco Industrial</option>
+                <option value="bancor">Dolar Banco de Cordoba</option>
+                <option value="chaco">Dolar Banco de Chaco</option>
+                <option value="pampa">Dolar Banco de La Pampa</option>
+                <option value="ORT">Dolar ORT</option>
+                </select>
+            <button id="boton-visualizar">Visualizar</button>
         </div>
     </div>
 
