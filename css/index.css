@@ -224,7 +224,7 @@ button {
     }
 }
 
-#optionlist .form-control {
+#optionlist.form-control {
   color: #fcfcfc;
   background-color: #232629;
 }
