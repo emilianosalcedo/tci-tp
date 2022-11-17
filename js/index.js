@@ -16,7 +16,13 @@ botonVisualizar.addEventListener('click', function () {
     mainDisplay.innerHTML = 'Mas de lo que estoy dispuesto a pagar, sobrio';
   }
   else {
-    fetch(url + opcion).then((res) => { res.json() }).then(data => {
+    fetch(url + opcion, {
+      method: 'GET',
+      mode: 'no-cors',
+      headers: {
+        'Access-Control-Allow-Origin': '*'
+      }
+    }).then((res) => { res.json() }).then(data => {
       console.log(data);
       var compra = data.compra;
       var venta = data.venta;
