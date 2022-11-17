@@ -10,12 +10,13 @@ if (mostrarMensaje) {
 
 botonVisualizar.addEventListener('click', function () {
   var opcion = document.getElementById('optionlist').value;
+  var url = 'https://api-dolar-argentina.herokuapp.com/api/';
 
   if (opcion == "ORT") {
     mainDisplay.innerHTML = 'Mas de lo que estoy dispuesto a pagar, sobrio';
   }
   else {
-    fetch('https://api-dolar-argentina.herokuapp.com/api/' + opcion).then((res) => { res.json() }).then(data => {
+    fetch(url + opcion).then((res) => { res.json() }).then(data => {
       console.log(data);
       var compra = data.compra;
       var venta = data.venta;
