@@ -51,6 +51,7 @@ button {
 }
 
 #current {
+    text-align: center;
     overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
