@@ -228,3 +228,8 @@ button {
   color: #fcfcfc;
   background-color: #232629;
 }
+
+#boton-visualizar:hover {
+  font-weight: bold;
+  box-shadow: gray 3px 3px 6px;
+}
