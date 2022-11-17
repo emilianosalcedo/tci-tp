@@ -101,16 +101,16 @@ var itemsContainer = document.querySelector('#items');
 
 var products = [
     {
-        photo : "img/tr1.png",
-        description : "Compre"
+        photo : "img/chorro.jpeg",
+        description : "VPN"
     },
     {
-        photo : "img/tr2.png",
-        description : "Compre"
+        photo : "img/viaja.jpeg",
+        description : "¡Viaja!"
     },
     {
-        photo : "img/tr3.png",
-        description : "Compre"
+        photo : "img/jobs.jpeg",
+        description : "Trabajos"
     }
 ];
 
