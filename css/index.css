@@ -223,3 +223,8 @@ button {
         width: 100%;
     }
 }
+
+#optionlist {
+  color: #fcfcfc;
+  background-color: #232629;
+}
